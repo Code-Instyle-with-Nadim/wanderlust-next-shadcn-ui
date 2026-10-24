@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { Compass, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+export default function NotFound(){return <main className="grid min-h-screen place-items-center bg-[#f5f8f6] px-6"><div className="max-w-md text-center"><span className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[#176b55] text-white"><Compass size={30}/></span><p className="eyebrow mt-7">404 · Off the map</p><h1 className="mt-3 text-4xl font-extrabold tracking-[-.06em]">Looks like you wandered off.</h1><p className="mt-4 text-sm leading-7 text-[#748079]">This page isn’t on our map just yet. Let’s get you back to somewhere lovely.</p><Link href="/" className="mt-7 inline-block"><Button size="lg"><ArrowLeft size={16}/> Back to home</Button></Link></div></main>}

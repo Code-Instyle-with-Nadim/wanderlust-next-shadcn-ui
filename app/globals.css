@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #17211d;
+  --card: #ffffff;
+  --card-foreground: #17211d;
+  --primary: #176b55;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f2;
+  --muted: #f5f7f6;
+  --muted-foreground: #68756f;
+  --border: #e5ebe7;
+  --radius: 1rem;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; margin: 0; }
+button, input { font: inherit; }
+::selection { background: #d3eee3; color: #174b3c; }
+.container-page { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.eyebrow { color: #176b55; text-transform: uppercase; letter-spacing: .15em; font-size: 11px; font-weight: 800; }
+.soft-shadow { box-shadow: 0 16px 48px rgba(26, 55, 44, .08); }
+.image-overlay { background: linear-gradient(180deg, rgba(0,0,0,0) 25%, rgba(0,0,0,.62) 100%); }
